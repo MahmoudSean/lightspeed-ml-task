@@ -12,32 +12,9 @@ Given historical monthly transaction data, forecast the next 6 months' sales rev
 
 ## 📁 Folder Structure
 
-merchant_forecasting/
-│
-├── data/ # Drop monthly_transactions.csv here
-├── src/ # Core logic (API, ML, pipeline)
-├── tests/ # Unit/integration tests
-├── .env # Environment variables
-├── Dockerfile # Container setup
-├── requirements.txt # Dependencies
-├── run.sh # Simple shell script to launch API
-└── README.md # This file
+<pre lang="text"> ```text lightspeed-ml-task/ │ ├── data/ # Raw input data (monthly_transactions.csv) ├── src/ # Core source code (API, ML pipeline, utilities) │ ├── forecast.py # Forecasting logic and models │ ├── utils/ # Helper functions (e.g., preprocessing) │ ├── models/ # Trained model artifacts │ ├── eligibility.py # Eligibility logic │ ├── pipeline.py # Orchestration of forecasting + eligibility │ └── main.py # FastAPI app entrypoint ├── tests/ # Unit and integration tests ├── Dockerfile # Container setup ├── requirements.txt # Python dependencies ├── run_tests.sh # Script to run unit/integration tests └── README.md # This file ``` </pre>
 
-lightspeed-ml-task/
-│
-├── data/ # Raw input data (monthly_transactions.csv)
-├── src/ # Core source code (API, ML pipeline, utilities)
-│ ├── forecast.py/ # Forecasting logic and models
-│ ├── utils/ # Helper functions (e.g., preprocessing)
-│ ├── models/ # Trained model artifacts
-│ ├── eligibility.py # Eligibility logic
-│ ├── pipeline.py # Orchestration of forecasting + eligibility
-│ └── main.py # FastAPI app entrypoint
-├── tests/ # Unit and integration tests
-├── Dockerfile # Container setup
-├── requirements.txt # Python dependencies
-├── run_tests.sh # Script to do unit/integration tests
-└── README.md # This file
+
 ---
 
 ## 🧪 Setup Instructions
