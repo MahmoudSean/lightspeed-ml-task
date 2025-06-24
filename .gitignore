@@ -1,0 +1,8 @@
+# Ignore Python virtual environment
+.venv/
+
+# Ignore data folder (datasets, large files, etc.)
+data/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
